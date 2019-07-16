@@ -1,12 +1,13 @@
-﻿<?php
+<?php
 function fibonacci($n)
 {
 	$nn = 0;
 	$n0 = 0;
 	$n1 = 1;
 
-	while ($nn <= $n ){
-		switch ($nn) {
+	while ($nn <= $n) {
+		switch ($nn)
+		{
 			case 0:
 				$r = $n0;
 				break;
@@ -25,4 +26,3 @@ function fibonacci($n)
 }
 
 fibonacci(64);
-?>
