@@ -1,0 +1,22 @@
+STRUCTURE
+
+author_table
+	id_a (id автора)
+	author (автор)
+	
+title_table
+	id_t (id книги)
+	title (название книги)
+	
+author_and_title
+	id
+	id_a
+	id_t
+	
+SQL QUERY
+
+SELECT `author` FROM `author_table` INNER JOIN `author_and_title` 
+ON `author_table`.`id_a` = `author_and_title`.`id_a` 
+GROUP BY `author` 
+HAVING COUNT(*) < 7
+
